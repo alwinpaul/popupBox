@@ -1,0 +1,12 @@
+.container{
+  width: 400px;
+  margin: 0 auto;
+}
+.text {
+  text-align: left;
+  font-size: 22px;
+  margin: 10px;
+}
+button {
+  float: right;
+}
