@@ -18,4 +18,14 @@ export class PopupBoxComponent implements OnInit {
     this.dialogRef.close();
   }
 
+  cancelPopup(): void {
+    this.data.errorCallback();
+    this.dialogRef.close();
+  }
+
+  confirmPopup(): void {
+    this.data.successCallback();
+    this.dialogRef.close();
+  }
+
 }

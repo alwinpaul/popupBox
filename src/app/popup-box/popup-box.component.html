@@ -1,4 +1,6 @@
 <div class="container">
   <div class="text">{{data.text}}</div>
-  <button mat-raised-button color="accent" (click)="closePopup()">Ok</button>
+  <button mat-raised-button color="accent" (click)="closePopup()" *ngIf="data.type=='alert'">Ok</button>
+  <button mat-button color="accent" (click)="cancelPopup()" *ngIf="data.type=='confirm'">Cancel</button>
+  <button mat-raised-button color="accent" (click)="confirmPopup()" *ngIf="data.type=='confirm'">Confirm</button>
 </div>
